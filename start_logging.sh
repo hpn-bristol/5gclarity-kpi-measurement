@@ -30,7 +30,7 @@ wifi="wlp4s0"
 # - Gained carrier
 # - Connected WiFi access point:
 # - DHCPv4 address xx.xx.xx.xx/xx via xx.xx.xx.xx
-#  - First packet arrived on the coresponding interface over MPTCP
+# - First packet arrived on the coresponding interface over MPTCP
 usr=$USER
 if [[ "$ww0" != "" ]]; then
     (sudo tail -f /var/log/syslog | egrep --line-buffered "$ww0" | tee -a $ww0.log) &
